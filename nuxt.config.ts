@@ -2,13 +2,13 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  // supabase: {
-  //   redirectOptions: {
-  //     login: '/auth',       // 没有登录时跳转路径
-  //     callback: '/', // 登录成功后回跳路径
-  //     exclude: [],          // 哪些页面不自动重定向（可选）
-  //   },
-  // },
+  supabase: {
+    redirectOptions: {
+      login: '/auth',       // 没有登录时跳转路径
+      callback: '/', // 登录成功后回跳路径
+      exclude: [],          // 哪些页面不自动重定向（可选）
+    },
+  },
   modules: [
     '@nuxt/icon',
     'nuxt-lodash',
