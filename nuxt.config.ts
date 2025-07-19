@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     redirectOptions: {
       login: '/auth',       // 没有登录时跳转路径
       callback: '/', // 登录成功后回跳路径
-      exclude: [],          // 哪些页面不自动重定向（可选）
+      exclude: ['/', '/index'],          // 哪些页面不自动重定向（可选）
     },
   },
   modules: [
